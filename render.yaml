@@ -1,0 +1,18 @@
+# Render Blueprint — repo kökünden tek Web Service
+# Dashboard: New → Blueprint → Bu dosyayı bağlayın veya repo köküne commit edin.
+
+version: "1"
+
+services:
+  - type: web
+    name: solarfootprint
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: STATIC_ROOT
+        value: /app/out
+      # İsteğe bağlı: yerel geliştirme için virgülle ayrı origin listesi
+      # - key: CORS_ALLOW_ORIGINS
+      #   value: http://localhost:3000

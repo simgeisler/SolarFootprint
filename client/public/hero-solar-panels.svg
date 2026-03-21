@@ -1,0 +1,51 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4ff"/>
+      <stop offset="100%" stop-color="#f5fbff"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b7deb5"/>
+      <stop offset="100%" stop-color="#8cc38a"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2742"/>
+      <stop offset="100%" stop-color="#1f4f7f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="970" cy="120" r="48" fill="#ffd84d"/>
+  <rect y="430" width="1200" height="270" fill="url(#ground)"/>
+
+  <g opacity="0.2" fill="#2d5c35">
+    <ellipse cx="180" cy="520" rx="110" ry="26"/>
+    <ellipse cx="450" cy="560" rx="150" ry="32"/>
+    <ellipse cx="820" cy="520" rx="130" ry="28"/>
+  </g>
+
+  <g transform="translate(210,330)">
+    <polygon points="0,120 250,40 560,140 310,220" fill="#4f5e6b"/>
+    <polygon points="20,110 250,45 540,135 310,200" fill="url(#panel)"/>
+    <g stroke="#88a9c7" stroke-width="2" opacity="0.9">
+      <line x1="72" y1="95" x2="360" y2="186"/>
+      <line x1="130" y1="78" x2="418" y2="169"/>
+      <line x1="188" y1="61" x2="476" y2="152"/>
+      <line x1="246" y1="48" x2="534" y2="139"/>
+      <line x1="110" y1="83" x2="86" y2="177"/>
+      <line x1="172" y1="65" x2="148" y2="159"/>
+      <line x1="234" y1="47" x2="210" y2="141"/>
+      <line x1="296" y1="67" x2="272" y2="161"/>
+      <line x1="358" y1="85" x2="334" y2="179"/>
+      <line x1="420" y1="103" x2="396" y2="197"/>
+      <line x1="482" y1="121" x2="458" y2="215"/>
+    </g>
+  </g>
+
+  <g transform="translate(120,360)">
+    <rect x="0" y="0" width="55" height="160" rx="8" fill="#2f5338"/>
+    <circle cx="28" cy="-12" r="20" fill="#82c47c"/>
+    <circle cx="11" cy="-4" r="16" fill="#96d08f"/>
+    <circle cx="46" cy="-2" r="15" fill="#96d08f"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+**/.venv
+**/node_modules
+**/.next
+**/__pycache__
+**/*.pyc
+**/.git
+client/out
+.env
+.env.*
+*.log
+README.md
+tasks.md
+prd.md

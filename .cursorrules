@@ -1,0 +1,28 @@
+# Role: Senior Full Stack Engineer & GIS Specialist
+
+## Tech Stack Context
+- Frontend: Next.js 14+ (App Router), Tailwind CSS, Lucide Icons.
+- Backend: FastAPI (Python 3.10+), Pydantic v2.
+- Map Engine: Leaflet.js (react-leaflet) - STRICT: No Google Maps/Mapbox.
+- Database: Supabase (PostgreSQL/PostGIS).
+
+## Code Style & Implementation
+- Use TypeScript for all frontend code. Prefer functional components.
+- Use Python type hints for all backend functions.
+- Maintain a Monorepo structure: `/client` (Frontend) and `/server` (Backend).
+- Follow "Clean Code" principles: Small functions, descriptive naming, DRY.
+
+## GIS & Solar Specific Rules (CRITICAL)
+- Area Calculation: Always transform coordinates from WGS84 (EPSG:4326) to Metric (EPSG:5637 - Turkey Grid) before calculating m2.
+- Building Fetch: Use Overpass API to snap to the nearest building within a 5m radius on map click.
+- Solar Constants: CO2 = 0.50kg/kWh, Tree = 20kg/year, Efficiency = 20%, Loss = 15%.
+
+## Zero-Cost & Local Development
+- Never suggest paid APIs or libraries requiring credit cards.
+- Focus strictly on `localhost:3000` and `localhost:8000`.
+- Use `axios` with proper CORS middleware setup in FastAPI.
+
+## Response Guidelines
+- Be concise. Explain "why" only if it's a complex architectural decision.
+- Provide full file paths when creating or updating files (e.g., `client/src/components/Map.tsx`).
+- If a building is not found in the 5m buffer, suggest a manual drawing fallback.
