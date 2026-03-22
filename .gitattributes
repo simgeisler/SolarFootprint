@@ -1,3 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.ts linguist-detectable=false
+# Client klasöründeki tüm TS ve JS dosyalarını istatistikten çıkar
+client/**/*.ts linguist-detectable=false
+client/**/*.tsx linguist-detectable=false
+client/**/*.js linguist-detectable=false
+client/**/*.jsx linguist-detectable=false
